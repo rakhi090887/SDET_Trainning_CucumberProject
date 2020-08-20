@@ -1,0 +1,437 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Counting Dashlets",
+        "description": "",
+        "id": "counting-dashlets;counting-dashlets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20980628500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Alchemy CRM Page",
+            "match": {
+              "location": "CountingDashlet.userIsOnalchemyCRMPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5456254300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User logs using \"admin\" and \"pa$$w0rd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 17
+                },
+                {
+                  "val": "pa$$w0rd",
+                  "offset": 29
+                }
+              ],
+              "location": "CountingDashlet.loginPage(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2336352500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Count the dashlet and print the title.",
+            "match": {
+              "location": "CountingDashlet.countDashlets()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000819300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close the browser",
+            "match": {
+              "location": "CountingDashlet.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Counting Dashlets",
+    "description": "",
+    "id": "counting-dashlets",
+    "keyword": "Feature",
+    "uri": "CRMActivity3_1.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CRMFeature"
+      },
+      {
+        "line": 1,
+        "name": "@CRMActivity3_1"
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Create leads using parameterization",
+        "description": "",
+        "id": "create-leads-using-parameterization;create-leads-using-parameterization",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19071498600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is loggedin on AlchemyCRM WEbsite using \"admin\" and \"pa$$w0rd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 46
+                },
+                {
+                  "val": "pa$$w0rd",
+                  "offset": 58
+                }
+              ],
+              "location": "CreateLeads.userLoggedIn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2991886600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Navigate to leads page and createLeads",
+            "match": {
+              "location": "CreateLeads.navigateToLeads()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2493112600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "fill the form using Firstname \"Software\" and lastName \"TestABC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Software",
+                  "offset": 31
+                },
+                {
+                  "val": "TestABC",
+                  "offset": 55
+                }
+              ],
+              "location": "CreateLeads.createLeads(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2040521800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Navigate to view leads to verify leads \"SoftwareTestABC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SoftwareTestABC",
+                  "offset": 40
+                }
+              ],
+              "location": "CreateLeads.VerifyLeads(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3042754700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "close the browser for CRMActivity3_2",
+            "match": {
+              "location": "CreateLeads.closeTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create leads using parameterization",
+    "description": "",
+    "id": "create-leads-using-parameterization",
+    "keyword": "Feature",
+    "uri": "CRMActivity3_2.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CRMFeature"
+      },
+      {
+        "line": 1,
+        "name": "@CRMActivity3_2"
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Schedule a meeting and invite members",
+        "description": "",
+        "id": "schedule-a-meeting-and-invite-members;schedule-a-meeting-and-invite-members;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13667332600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is logged in on alchemy CRM page",
+            "match": {
+              "location": "ScheduleMeeting.userInLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6285040000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Navigate to schedule meeting and search for page",
+            "match": {
+              "location": "ScheduleMeeting.navigateToMeeting()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2986067300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "add member \"test\" and \"test1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 12
+                },
+                {
+                  "val": "test1",
+                  "offset": 23
+                }
+              ],
+              "location": "ScheduleMeeting.addMember(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2421834700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify the meeting created \"Testting\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Testting",
+                  "offset": 28
+                }
+              ],
+              "location": "ScheduleMeeting.verfifyMeetng(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1966351900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "close the browser for CRMAc3_3",
+            "match": {
+              "location": "ScheduleMeeting.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@CRMActivity3_3"
+          },
+          {
+            "line": 2,
+            "name": "@CRMFeature"
+          }
+        ]
+      }
+    ],
+    "name": "Schedule a meeting and invite members",
+    "description": "",
+    "id": "schedule-a-meeting-and-invite-members",
+    "keyword": "Feature",
+    "uri": "CRMActivity3_3.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@CRMFeature"
+      },
+      {
+        "line": 2,
+        "name": "@CRMActivity3_3"
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Creating a Product.",
+        "description": "",
+        "id": "creating-a-product.;creating-a-product.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13958084400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on AlchemyCRM website page using username and password",
+            "match": {
+              "location": "CreateProduct.userInLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6016642300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Create product using information \"Test\" and \"20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test",
+                  "offset": 34
+                },
+                {
+                  "val": "20",
+                  "offset": 45
+                }
+              ],
+              "location": "CreateProduct.createProduct(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2352593900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify the product creation using \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test",
+                  "offset": 35
+                }
+              ],
+              "location": "CreateProduct.verifyProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3152626900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "close the browser for CRMact3_4",
+            "match": {
+              "location": "CreateProduct.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CRMActivity3_4"
+          },
+          {
+            "line": 1,
+            "name": "@CRMFeature"
+          }
+        ]
+      }
+    ],
+    "name": "Creating a Product.",
+    "description": "",
+    "id": "creating-a-product.",
+    "keyword": "Feature",
+    "uri": "CRMActivity3_4.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CRMFeature"
+      },
+      {
+        "line": 1,
+        "name": "@CRMActivity3_4"
+      }
+    ]
+  }
+]
